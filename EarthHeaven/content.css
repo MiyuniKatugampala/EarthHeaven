@@ -1,0 +1,312 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.background1 {
+  position: absolute;
+
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  position: relative;
+  margin-left: 20px;
+  color: white;
+  font-size: 3em;
+  font-family: "Oleo Script Swash Caps", system-ui;
+}
+
+.logo img {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10%;
+  width: 120px;
+}
+
+.navigation {
+  z-index: 1000;
+}
+
+.navigation a {
+  position: relative;
+  left: -20%;
+  top: 10%;
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0 7px;
+  text-decoration: none;
+  padding: 6px 20px;
+}
+
+.navigation a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 7px;
+  transform: scale(0);
+  opacity: 0;
+  transition: .5s;
+}
+
+.navigation a:hover span {
+  transform: scale(1);
+  opacity: 1;
+}
+
+main {
+  padding: 50px;
+}
+
+.banner h1 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+  color: white;
+}
+
+.about-us {
+  position: relative;
+  margin-top: 300px;
+  margin-bottom: 40px;
+}
+
+.about-us h1 {
+  margin-left: 50px;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.about-us p {
+  width: 1000px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.about-us img {
+  position: relative;
+  margin-top: -700px;
+  left: 1100px;
+  width: 600px;
+
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+}
+
+.products-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.products-preview h2 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.product {
+  width: calc(33% - 20px);
+  text-align: center;
+  margin-left: 150px;
+}
+
+.product img {
+  position: relative;
+  width: 400px;
+}
+
+.product h3{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: #000;
+}
+
+.main-container {
+  display: flex;
+}
+
+/*Footer*/
+footer {
+  background-color: #0000006b;
+}
+
+.footercontainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialicons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialicons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+.socialicons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.socialicons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footernav {
+  margin: 30px 0;
+}
+
+.footernav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footernav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footernav ul li a:hover {
+  opacity: 1;
+}
+
+.footerbottom {
+  background-color: #00000096;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerbottom p {
+  color: white;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media(max-width:700px) {
+  .footernav ul {
+    flex-direction: column;
+  }
+
+  .footernav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .goal {
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+
+  nav ul {
+    width: 50%;
+    background: linear-gradient(#6fea6f, #96f3a0);
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #000;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menulist {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .company-details {
+    position: relative;
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+
+  .maincontainer {
+    width: 75%;
+  }
+}
+
+.maincontainer:hover {
+  .conthead {
+    color: rgb(77, 241, 72);
+    text-decoration: underline;
+    transition: 1s;
+  }
+
+  box-shadow: 0 0 30px rgb(130, 128, 128);
+}
